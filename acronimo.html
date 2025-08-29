@@ -6,23 +6,23 @@
     <title> Acrónimo: TAN </title>
     <!-- Fuentes personalizadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap" rel="stylesheet">
     <!-- Hoja de estilos externa -->
     <link rel="stylesheet" href="acronimo.css">
 </head>
 <body>
     <main class="container">
-
-        <header>
-            <h1> El acrónimo que me describe </h1>
-            <p> Un ejercicio para practicar HTML, CSS y un poco de Javascript</p>
+        <!-- Encabezado de página -->
+        <header class="page-header">
+            <h1 id="title"> El acrónimo que me describe </h1>
+            <p id="subtitle"> Un ejercicio para practicar HTML, CSS y un poco de Javascript</p>
         </header>
         <!-- Tarjeta uno, con letra T -->
-        <section>
-            <div>
+        <section class="card"> <!-- Podemos utilizar etiqueta article -->
+            <div> 
                 <h2> T </h2>
-                <figcaption> Para <strong>tamal</strong> </figcaption>
+                <span> Para <strong>tamal</strong> </span>
             </div>
             <div class="image-container">
                 <figure>
@@ -30,11 +30,10 @@
                 </figure>
             </div>
             <div>
-               <button> Dato curioso </button> 
+               <button onclick="alert('El tamal más grande del mundo se hizo en México, fue un zacahuil de 1400 kilos')"> Dato curioso </button> 
             </div>
         </section>
     </main>
-    
     
 </body>
 </html>

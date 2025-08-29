@@ -13,17 +13,80 @@
     --color-botones: #4895ef;
     /* Fuentes */
     --fuente-titulo: "Luckiest Guy", cursive;
-    --fuente-cuerpo: "Lato", sans-serif;
+    --fuente-subtitulos: "Lato", sans-serif;
 }
 
 body{
     font-family: "Luckiest Guy", cursive;
     background-color: var(--color-principal-fondo);
-   /*  justify-content: center; Funciona solo con ciertos tipos de display*/
+    color:var(--color-titulos);
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 800px; /* Este es el ancho máximo en pantallas grandes */
+    width: 100%;/* Ocupar todo el ancho disponible */
+    /* border: 10px solid red; El contenedor de los elementos de mi página*/ 
+}
+
+.page-header{
     text-align: center;
+    margin-bottom: 40px;/* Crea espacio debajo de header */
+}
+
+/* Important debe usarse con moderación, evitar su uso lo más posible */
+/* h1{
+    color: pink !important;
+} */ 
+
+h1{
+    font-size: 30px;/* Tamaño de fuente del título */
+    /* margin-bottom: 20px; Espaciado de 20px hacia abajo, para separarse de <p>*/
+}
+
+/* Selector descendiente. Seleccionamos el párrafo que está dentro de page-header */
+.page-header p{
+    margin-top: 30px;
+}
+
+#subtitle{
+    font-family: var(--fuente-subtitulos);
+    color: var(--color-texto);
+}
+
+/* Tarjeta */
+.card{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;/* Redondeado de las esquinas */
+    padding: 20px;/* Espacio interno de la tarjeta */
+    margin: 25px;/* Espacio externo de la tarjeta */
+    
+    /* Flexbox */
+    display: flex;/* Convierte nuestro contenedor en un contenedor flexible */
+    align-items: center;/*Alinea los elementos dentro del contenedor */
+    gap:70px; /* Crear un espacio de 70px entre cada elemento */
+}
+
+/* Selector de pseudoclase */
+.card:hover{
+    transform: translateY(-5px); /* Mueve la tarjeta 5px hacia arriba */
+    box-shadow: 10px 5px 5px var(--color-botones);
+}
+
+h2{
+    font-size: 4em;/* em: Unidad de medida relativa */
 }
 
 img{
-    width: 500px;
-    height: 600px;
+    max-width: 100%;
+    height: auto;/* Mantiene la proporción de la imagen al cambiar el ancho */
+}
+
+button{
+    background-color: var(--color-botones);
+    border: 1px solid black;
+    padding:12px;
 }

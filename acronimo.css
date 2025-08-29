@@ -4,16 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Declaramos variables personalizadas para hacer mantenible y consistente nuestro código*/
+/* Declaramos variables globales personalizadas (custom properties) para hacer mantenible y consistente nuestro código*/
 :root{
     /* Paleta de colores:  */
     --color-principal-fondo: #cdb4db;
-    --color-titulos: #FFC8DD;
+    --color-titulos: #4361ee;
     --color-texto: #03045e;
-    --color-botones: #A2D2FF;
+    --color-botones: #4895ef;
     /* Fuentes */
     --fuente-titulo: "Luckiest Guy", cursive;
-    --fuente-cuerpo: "Open Sans"
+    --fuente-cuerpo: "Lato", sans-serif;
 }
 
 body{
@@ -27,4 +27,3 @@ img{
     width: 500px;
     height: 600px;
 }
-

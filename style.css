@@ -1,0 +1,21 @@
+/* Fuente personalizada */
+/* .sedgwick-ave-regular {
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* Selector universal */
+*{
+    background-color: rgb(62, 138, 205);
+}
+
+h1{
+    color: #2D1A73;
+}
+
+/* Selector de etiqueta o de tipo */
+h2{
+    font-family: "Sedgwick Ave", cursive;
+    color: pink;
+}

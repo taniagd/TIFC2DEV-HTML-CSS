@@ -1,0 +1,30 @@
+/* Resetear estilos para mejorar consistencia entre navegadores. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Declaramos variables personalizadas para hacer mantenible y consistente nuestro código*/
+:root{
+    /* Paleta de colores:  */
+    --color-principal-fondo: #cdb4db;
+    --color-titulos: #FFC8DD;
+    --color-texto: #03045e;
+    --color-botones: #A2D2FF;
+    /* Fuentes */
+    --fuente-titulo: "Luckiest Guy", cursive;
+    --fuente-cuerpo: "Open Sans"
+}
+
+body{
+    font-family: "Luckiest Guy", cursive;
+    background-color: var(--color-principal-fondo);
+   /*  justify-content: center; Funciona solo con ciertos tipos de display*/
+    text-align: center;
+}
+
+img{
+    width: 500px;
+    height: 600px;
+}
+

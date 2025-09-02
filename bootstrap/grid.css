@@ -1,0 +1,8 @@
+.container{
+   background-color: cornflowerblue;
+    /* margin: 10px;  */
+} 
+
+.container-fluid{
+    background-color: crimson;
+}

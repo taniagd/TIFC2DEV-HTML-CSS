@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./grid.css">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <!-- Contenedor -->
+    <div class="container mb-1">
+        <div class="row"> <!-- Row es fila - horizontal -->
+          <!-- Columnas con el mismo ancho: distribución equitativa del espacio disponible -->
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+          <div class="col">4</div>
+          <div class="col">5</div>
+          <div class="col">6</div>
+          <div class="col">7</div>
+          <div class="col">8</div>
+          <div class="col">9</div>
+          <div class="col">10</div>
+          <div class="col">11</div>
+          <div class="col">12</div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Columnas que no tienen el mismo ancho -->
+    <div class="container bg-success">
+      <div class="row">
+        <div class="col-3"> 
+          <img class="img-fluid" src="https://images.pexels.com/photos/7770566/pexels-photo-7770566.jpeg" alt="Cinco personas sentadas juntas en una banca, todas mirando sus teléfonos móviles, con diferentes emojis sobre sus cabezas">   
+        </div>
+        <div class="col-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, assumenda. Beatae dolores dolorem soluta iusto vel doloribus? Quidem, nostrum ducimus. Cumque vel nemo facere libero natus voluptate beatae aspernatur impedit?
+        Vero, eaque quae. Alias optio deserunt, recusandae voluptas reiciendis autem corrupti natus ab! Nobis accusantium eum cumque labore, numquam voluptatem quas nisi nesciunt dolores autem inventore qui voluptates beatae. Sunt! </div>
+        <div class="col-2"> C </div>
+        <div class="col-2"> D </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Para tamaños específicos frente a ciertos tamaños de pantalla. Es importante ir de la pantalla más pequeña a la más grande  -->
+        <div class="col-12 col-md-6 col-lg-3 border"> 💜 Blanca </div>
+        <div class="col-12 col-md-6 col-lg-3 border"> 💚 Tania </div>
+        <div class="col-12 col-md-6 col-lg-3 border"> 💛 Nancy </div>
+        <div class="col-12 col-md-6 col-lg-3 border"> 🖤 Sergio </div>
+      </div>
+    </div>
+
+
+    <!-- Contenedor fluido -->
+    <div class="container-fluid">
+        Contenedor #2
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

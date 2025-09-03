@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Componentes</title>
+    <!-- Enlace del CDN de Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre mí</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mi experiencia
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="https://mexico.generation.org/"
+                    >Trabajo</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://goynmexico.org/"
+                    >Voluntariado</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://technolatinas.org/"
+                    >Comunidades</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- Fila #1 del grid- Sección principal -->
+      <div class="row align-items-center">
+        <!-- Columna #1 -->
+        <div class="col-md-6 text-center">
+          <h1 class="display-4 fw-bold">
+            Soy <span class="text-primary">Tania Gayosso</span>
+          </h1>
+          <!-- my: utilidad de espaciado, significa que el margin se aplicará al eje y (vertical), o sea arriba y abajo -->
+          <p class="lead my-3">
+            Desarrolladora web y educadora tecnológica con formación humanista.
+          </p>
+          <button type="button" class="btn btn-primary">¡Contáctame!</button>
+        </div>
+
+        <!-- Columna #2 -->
+        <div class="col-md-6 mt-4 mt-md-0">
+          <img
+            src="../img/TaniaGayosso.png"
+            class="img-fluid rounded-circle"
+            alt="Fotografía de Tania vistiendo un saco azul, blusa blanca y luce con semblante feliz"
+          />
+        </div>
+      </div>
+
+      <!-- Segunda fila del grid - Sección de tarjetas-->
+      <div class="row my-5">
+        <!-- Columna #1 - Tarjeta de habilidades técnicas -->
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Habilidades técnicas</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">HTML, CSS & Bootstrap</li>
+              <li class="list-group-item">Javascript</li>
+              <li class="list-group-item">SCRUM</li>
+              <li class="list-group-item">Java</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Aquí puedes ver mis certificados</a>
+            </div>
+          </div>
+        </div>
+        <!-- Columna #2 - Tarjeta de Experiencia -->
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Experiencia</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                Profesional y académica
+              </h6>
+              <p class="card-text">
+                Profesional en tecnología y humanidades, con 4 años de experiencia. Trabajo en educación digital en Generation y gestión de proyectos tecnológicos con enfoque social en GOYN.
+              </p>
+              <a href="#" class="card-link">Conoce mis proyectos</a>
+            </div>
+          </div>
+        </div>
+        <!-- Columna #3 - Tarjeta de habilidades blandas -->
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Habilidades blandas</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Comunicación asertiva</li>
+              <li class="list-group-item">Trabajo en equipo</li>
+              <li class="list-group-item">Mentalidad de crecimiento</li>
+              <li class="list-group-item">Liderazgo</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Aquí puedes ver mis certificados</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <!-- Script de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
